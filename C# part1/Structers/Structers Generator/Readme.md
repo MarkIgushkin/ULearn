@@ -2,10 +2,9 @@
 
 Сначала нужно создать типы данных, с которыми мы будем работать. Нам понадобятся классы и структуры с 512 полями! Очевидно, мы не хотим писать их вручную, и воспользуемся кодогенерацией.
 
-Скачайте проект
-
+<a href="/Exercise/StudentZip?courseId=BasicProgramming&amp;slideId=616826fa-d344-4292-9ab4-ec5c8ea83e1e">Скачайте проект</a>
 Реализуйте метод Generator.GenerateDeclarations() так, чтобы он возвращал строку следующего вида:
-
+```
 struct S1
 {
 byte Value0;
@@ -35,8 +34,13 @@ class C4
 {
 byte Value0; byte Value1; byte Value2; byte Value3;
 }
+```
 
-  public class ArrayRunner : IRunner
+Классы имеют вид C1, C2, C4, C8 и т.д. Список индексов возьмите из Constants.FieldCounts.
+
+Также реализуйте метод Generator.GenerateArrayRunner(), чтобы он возвращал строку следующего вида:
+```
+public class ArrayRunner : IRunner
   {
       void PC1()
       {
@@ -66,3 +70,4 @@ byte Value0; byte Value1; byte Value2; byte Value3;
         throw new ArgumentException();
       }
 }
+```
