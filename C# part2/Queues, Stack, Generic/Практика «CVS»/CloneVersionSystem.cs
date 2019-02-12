@@ -10,8 +10,7 @@ namespace Clones
 
         public CloneVersionSystem()
         {
-            clones = new List<TheCLone<string>>();
-            clones.Add(new TheCLone<string>());
+            clones = new List<TheCLone<string>>() { new TheCLone<string>() };
         }
 
 		public string Execute(string query)
@@ -46,31 +45,31 @@ namespace Clones
             ReLearnHistory = new MyStack<TValue>(null);
         }
 
-        public string LearnClone(TValue programId)
+        public TValue LearnClone(TValue programId)
         {
             if (ProgramId != null)
                 HistoryOfChanges.Push(ProgramId);
             ReLearnHistory = new MyStack<TValue>(null);
             ProgramId = programId;
-            return null;
+            return default(TValue);
         }
 
-        public string RallBack()
+        public TValue RallBack()
         {
             ReLearnHistory.Push(ProgramId);
             ProgramId = HistoryOfChanges.Pop();
-            return null;
+            return default(TValue);
         }
 
-        public string ReLearn()
+        public TValue ReLearn()
         {
             if (ProgramId != null)
                 HistoryOfChanges.Push(ProgramId);
             ProgramId = ReLearnHistory.Pop();
-            return null;
+            return default(TValue);
         }
 
-        public string Clone(List<TheCLone<TValue>> clones)
+        public TValue Clone(List<TheCLone<TValue>> clones)
         {
             clones.Add(new TheCLone<TValue>()
             {
@@ -78,7 +77,7 @@ namespace Clones
                 HistoryOfChanges = new MyStack<TValue>(this.HistoryOfChanges.Head),
                 ReLearnHistory = new MyStack<TValue>(this.ReLearnHistory.Head)
             });
-            return null;
+            return default(TValue);
         }
 
         public TValue GetProgrammId()
