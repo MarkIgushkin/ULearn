@@ -1,25 +1,26 @@
-В этой задаче вам нужно реализовать стек ограниченного размера. Этот стек работает как обычный стек, однако при превышении максимального размера удаляет самый глубокий элемент в стеке. Таким образом в стеке всегда будет ограниченное число элементов.
-Вот пример работы такого стека с ограничением в 2 элемента:
+<div class="slide">
+                <h1>
+                    <span class="slide__title">
+РџСЂР°РєС‚РёРєР° В«Limited Size StackВ»                    </span>
+                    <span class="score">10 Р±Р°Р»Р»РѕРІ РёР· 10</span>
+                </h1>
+				<p>Р’ СЌС‚РѕР№ Р·Р°РґР°С‡Рµ РІР°Рј РЅСѓР¶РЅРѕ СЂРµР°Р»РёР·РѕРІР°С‚СЊ СЃС‚РµРє РѕРіСЂР°РЅРёС‡РµРЅРЅРѕРіРѕ СЂР°Р·РјРµСЂР°.
+Р­С‚РѕС‚ СЃС‚РµРє СЂР°Р±РѕС‚Р°РµС‚ РєР°Рє РѕР±С‹С‡РЅС‹Р№ СЃС‚РµРє, РѕРґРЅР°РєРѕ РїСЂРё РїСЂРµРІС‹С€РµРЅРёРё РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ СЂР°Р·РјРµСЂР° СѓРґР°Р»СЏРµС‚ СЃР°РјС‹Р№ РіР»СѓР±РѕРєРёР№ СЌР»РµРјРµРЅС‚ РІ СЃС‚РµРєРµ.
+РўР°РєРёРј РѕР±СЂР°Р·РѕРј РІ СЃС‚РµРєРµ РІСЃРµРіРґР° Р±СѓРґРµС‚ РѕРіСЂР°РЅРёС‡РµРЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ.</p>
+<p>Р’РѕС‚ РїСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ С‚Р°РєРѕРіРѕ СЃС‚РµРєР° СЃ РѕРіСЂР°РЅРёС‡РµРЅРёРµРј РІ 2 СЌР»РµРјРµРЅС‚Р°:</p>
+		<textarea class="code code-sample" style="display: none;" data-lang="csharp">// СЃРЅР°С‡Р°Р»Р° СЃС‚РµРє РїСѓСЃС‚
+stack.Push(10); // РІ СЃС‚РµРєРµ 10
+stack.Push(20); // РІ СЃС‚РµРєРµ 10, 20
+stack.Push(30); // РІ СЃС‚РµРєРµ 20, 30
+stack.Push(40); // РІ СЃС‚РµРєРµ 30, 40
+stack.Pop(); // РІРѕР·РІСЂР°С‰Р°РµС‚ 40, РІ СЃС‚РµРєРµ РѕСЃС‚Р°С‘С‚СЃСЏ 30
+stack.Pop(); // РІРѕР·РІСЂР°С‰Р°РµС‚ 30, СЃС‚РµРє РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РїСѓСЃС‚</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="left: 34px; top: 4px; width: 3px; height: 0px; overflow: hidden; position: relative;"><textarea tabindex="0" style="padding: 0px; outline: invert; width: 1px; height: 1em; bottom: -1em; position: absolute;" spellcheck="false" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div tabindex="-1" class="CodeMirror-vscrollbar" cm-not-content="true"><div style="height: 0px; min-width: 1px;"></div></div><div tabindex="-1" class="CodeMirror-hscrollbar" cm-not-content="true"><div style="width: 0px; height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div tabindex="-1" class="CodeMirror-scroll" draggable="true"><div class="CodeMirror-sizer" style="padding-right: 0px; padding-bottom: 0px; margin-bottom: -16px; margin-left: 30px; border-right-width: 14px; min-height: 135px;"><div style="top: 0px; position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="outline: invert; position: relative;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>7</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 18.2px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-comment">// СЃРЅР°С‡Р°Р»Р° СЃС‚РµРє РїСѓСЃС‚</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Push</span>(<span class="cm-number">10</span>); <span class="cm-comment">// РІ СЃС‚РµРєРµ 10</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Push</span>(<span class="cm-number">20</span>); <span class="cm-comment">// РІ СЃС‚РµРєРµ 10, 20</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Push</span>(<span class="cm-number">30</span>); <span class="cm-comment">// РІ СЃС‚РµРєРµ 20, 30</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Push</span>(<span class="cm-number">40</span>); <span class="cm-comment">// РІ СЃС‚РµРєРµ 30, 40</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Pop</span>(); <span class="cm-comment">// РІРѕР·РІСЂР°С‰Р°РµС‚ 40, РІ СЃС‚РµРєРµ РѕСЃС‚Р°С‘С‚СЃСЏ 30</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">stack</span>.<span class="cm-variable">Pop</span>(); <span class="cm-comment">// РІРѕР·РІСЂР°С‰Р°РµС‚ 30, СЃС‚РµРє РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РїСѓСЃС‚</span></span></pre></div></div></div></div></div></div><div style="top: 135px; width: 1px; height: 14px; border-bottom-color: transparent; border-bottom-width: 0px; border-bottom-style: solid; position: absolute;"></div><div class="CodeMirror-gutters" style="height: 149px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+<p>РћРїРµСЂР°С†РёСЏ Push РґРѕР»Р¶РЅР° РёРјРµС‚СЊ СЃР»РѕР¶РЅРѕСЃС‚СЊ O(1), С‚Рѕ РµСЃС‚СЊ РЅРёРєР°Рє РЅРµ Р·Р°РІРёСЃРµС‚СЊ РѕС‚ СЂР°Р·РјРµСЂР° СЃС‚РµРєР°.</p>
+<p><a href="/Exercise/StudentZip?courseId=BasicProgramming2&amp;slideId=cdf76069-758c-4a3c-aacb-df3fa877cac5">РЎРєР°С‡Р°Р№С‚Рµ РїСЂРѕРµРєС‚ LimitedSizeStack</a>. Р РµР°Р»РёР·СѓР№С‚Рµ РєР»Р°СЃСЃ <code>LimitedSizeStack</code>.</p>
+<p>РћС‚Р»Р°РґСЊС‚Рµ РµРіРѕ СЂРµР°Р»РёР·Р°С†РёСЋ СЃ РїРѕРјРѕС‰СЊСЋ С‚РµСЃС‚РѕРІ РІ РєР»Р°СЃСЃРµ <code>LimitedSizeStack_should</code>. 
+РџСЂРѕРІРµСЂСЊС‚Рµ СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚СЊ РѕРїРµСЂР°С†РёРё Push СЃ РїРѕРјРѕС‰СЊСЋ С‚РµСЃС‚Р° РёР· РєР»Р°СЃСЃР° <code>LimitedSizeStack_PerformanceTest</code>.</p>
+	
 
-
-1
-// сначала стек пуст
-2
-stack.Push(10); // в стеке 10
-3
-stack.Push(20); // в стеке 10, 20
-4
-stack.Push(30); // в стеке 20, 30
-5
-stack.Push(40); // в стеке 30, 40
-6
-stack.Pop(); // возвращает 40, в стеке остаётся 30
-7
-stack.Pop(); // возвращает 30, стек после этого пуст
-
-
-Операция Push должна иметь сложность O(1), то есть никак не зависеть от размера стека.
-Скачайте проект LimitedSizeStack. Реализуйте класс LimitedSizeStack.
-Отладьте его реализацию с помощью тестов в классе LimitedSizeStack_should. Проверьте эффективность операции Push с помощью теста из класса LimitedSizeStack_PerformanceTest.
+			</div>
 
 https://ulearn.me/Course/BasicProgramming2/Praktika_Limited_Size_Stack__cdf76069-758c-4a3c-aacb-df3fa877cac5
