@@ -1,10 +1,8 @@
-<div class="slide">
-                <h1>
-                    <span class="slide__title">
-Практика «Отмена»                    </span>
-            
-                </h1>
-				<p>Продолжайте работу в <a href="/Exercise/StudentZip?courseId=BasicProgramming2&amp;slideId=ab3d7575-9bb1-4a4f-8d07-c1a7c2646f40">том же проекте LimitedSizeStack</a>.</p>
+
+ <h1><span class="slide__title">
+Практика «Отмена» </span></h1>
+
+<p>Продолжайте работу в <a href="/Exercise/StudentZip?courseId=BasicProgramming2&amp;slideId=ab3d7575-9bb1-4a4f-8d07-c1a7c2646f40">том же проекте LimitedSizeStack</a>.</p>
 <p>Если вы запустите проект на исполнение, то увидете окно приложения, в котором можно добавлять новые дела и удалять уже существующие.
 Однако кнопка "Отмена" пока не работает. Ваша задача — сделать так, чтобы эта кнопка отменяла последнее действие пользователя.</p>
 <p>Изучите класс <code>ListModel</code> — в нём реализована логика работы кнопок в приложении.</p>
@@ -19,8 +17,5 @@
 <p>Проверить корректность своего решения можно на модульных тестах из класса <code>ListModel_Should</code> и <code>ListModel_PerformanceTest</code>.</p>
 <p>Если хотите, можете воспользоваться классическим объектно-ориентированным шаблоном <a href="https://en.wikipedia.org/wiki/Command_pattern" target="_blank">Команда</a>.
 Однако для сдачи данной задачи, точно следовать этому шаблону необязательно.</p>
-	
-
-			</div>
 
 https://ulearn.me/Course/BasicProgramming2/Praktika_Otmena__ab3d7575-9bb1-4a4f-8d07-c1a7c2646f40?version=3222858
