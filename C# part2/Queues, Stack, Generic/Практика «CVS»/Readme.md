@@ -1,6 +1,5 @@
 
-                    <span class="slide__title">
-Практика «CVS»                    </span>
+Практика «CVS»                  
 
 <p>Клонеры с планеты Камину выращивают клонов, причём отменных.
 Таких хороших результатов они достигают за счёт того, что тщательно следят за эволюцией своих творений.
@@ -54,5 +53,5 @@
 <p>Источник задачи — <a href="http://acm.timus.ru/problem.aspx?num=1992" target="_blank">acm.timus.ru</a></p>
 	
 
-			</div>
+			
 https://ulearn.me/Course/BasicProgramming2/Praktika_CVS__1d5457ac-46f1-43af-b902-abfba0a0c280?version=3232621
